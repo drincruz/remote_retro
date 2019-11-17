@@ -171,10 +171,10 @@ describe("UserListItem", () => {
       expect(wrapper.html()).to.contain("allVotesIn")
     })
 
-    context("and the given user has more than 2 votes", () => {
+    context("and the given user has more than 4 votes", () => {
       const userWithFiveVotes = { ...defaultUserAttrs, id: 999 }
       const voteForUser = { user_id: 999 }
-      const votes = [voteForUser, voteForUser, voteForUser]
+      const votes = [voteForUser, voteForUser, voteForUser, voteForUser, voteForUser]
 
       it("renders an opaque span indicating that the user is done voting", () => {
         const wrapper = shallow(

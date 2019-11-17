@@ -1,4 +1,4 @@
-export const VOTE_LIMIT = 3
+export const VOTE_LIMIT = 5
 
 export default {
   VOTE_LIMIT,
